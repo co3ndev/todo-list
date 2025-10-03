@@ -12,8 +12,8 @@ body {
 }
 
 .wrapper {
-    max-width: 700px;
-    min-width: 65vw;
+    max-width: 600px;
+    min-width: 45vw;
     margin: 40px auto;
     background: #fff;
     border-radius: 8px;
@@ -76,8 +76,8 @@ li {
     padding: 10px 16px;
     border-radius: 4px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    align-items: left;
+    word-wrap:break-word;
 }
 
 li.completed {

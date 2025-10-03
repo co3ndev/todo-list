@@ -1,16 +1,20 @@
 let addTaskButton = document.getElementById("addTaskButton");
 addTaskButton.addEventListener("click", addTask);
 
+let container = document.querySelector("#theList");
+let newInput = document.getElementById("newToDo");
+
 function addTask(){
-    let container = document.querySelector("#theList");
-    let newInput = document.getElementById("toDoForm");
+    let newTask = document.createElement("p"); // Create new task
 
-    let newTask = document.createElement("li");
+    let taskText = newInput.value; // sets taskText to value of input
 
-    let taskText = newInput.value;
-
-    newTask.textContent = taskText;
-    container.appendChild(newTask);
-    newInput.value = "";
-    console.log(`Added ${newInput} to task list`);
+    if (taskText != 0){
+        newTask.textContent = taskText; // Set task content of new element 
+        container.appendChild(newTask); // Add task to bottom of list
+        newInput.value = ""; // Reset button
+        console.log(`Added ${newInput.value} to task list`); // Console export
+    } else{
+        return 0;
+    }
 }
