@@ -1,8 +1,10 @@
-const container = document.querySelector("#theList")
-const newTask = document.createElement("ul");
+let container = document.querySelector("#theList");
+let newTask = document.createElement("li");
 
 function addTask(){
-    newTask.textContent = newToDo;
+    let newInput = document.getElementById("newToDo");
 
+    newTask.textContent = newInput;
     container.appendChild(newTask);
+    return addTask();
 }

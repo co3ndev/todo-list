@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <div class="wrapper" id="wrapper">
         <h1>Easy To-Do</h1>
 
-        <form id="toDoForm">
+        <form id="toDoForm" class="form-row">
             <input type="text" name="newToDo" id="newToDo" placeholder="Anything you need to get done" required autofocus>
-            <button type="submit" onclick="addTask('hello')">Submit</button>
+            <button type="submit" onclick="addTask()">Submit</button>
         </form>
         <ul id="theList">
         </ul>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
